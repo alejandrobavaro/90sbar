@@ -1,0 +1,129 @@
+/* ------------------------------------------------------------ */
+/* ESTILOS BASE PARA EL LAYOUT PRINCIPAL */
+/* ------------------------------------------------------------ */
+.main-home {
+  padding-top: 70px; // Espacio para el header fijo
+  background-color: #1a1a1a; // Fondo oscuro
+  color: #f5f5f5; // Texto claro
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden; // Previene scroll horizontal
+}
+
+/* ------------------------------------------------------------ */
+/* ESTILOS COMUNES PARA TODAS LAS SECCIONES */
+/* ------------------------------------------------------------ */
+// Cada sección tiene padding vertical y está centrada
+.featured-section,
+.events-section,
+.testimonials-section,
+.contact-section {
+  padding: 2rem 1rem; // Mobile first
+  max-width: 100%;
+  margin: 0 auto;
+  
+  // Estilos para tablet (768px)
+  @media (min-width: 768px) {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+  }
+  
+  // Estilos para escritorio (1024px)
+  @media (min-width: 1024px) {
+    padding: 4rem 2rem;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* ESTILOS PARA TÍTULOS DE SECCIÓN */
+/* ------------------------------------------------------------ */
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem; // Tamaño móvil
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  
+  // Subrayado decorativo
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #5e35b1, #00acc1);
+  }
+  
+  // Tablet
+  @media (min-width: 768px) {
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  // Escritorio
+  @media (min-width: 1024px) {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* DIVISORES ENTRE SECCIONES */
+/* ------------------------------------------------------------ */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 172, 193, 0.3), transparent);
+  margin: 2rem 0;
+  
+  @media (min-width: 768px) {
+    margin: 3rem 0;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* EFECTOS HOVER PARA ELEMENTOS INTERACTIVOS */
+/* ------------------------------------------------------------ */
+.hover-effect {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* ANIMACIONES SUTILES */
+/* ------------------------------------------------------------ */
+@keyframes subtleScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.interactive-element {
+  &:hover {
+    animation: subtleScale 1.5s infinite;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* AJUSTES ESPECÍFICOS PARA SECCIONES */
+/* ------------------------------------------------------------ */
+// Hero Banner no necesita padding adicional
+.hero-section {
+  padding: 0;
+  margin: 0;
+}
+
+// Sección de contacto con fondo ligeramente diferente
+.contact-section {
+  background-color: #222222;
+}

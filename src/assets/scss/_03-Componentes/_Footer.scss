@@ -1,0 +1,198 @@
+/* 
+ * ESTILOS PARA EL FOOTER
+ * 
+ * Contiene:
+ * - Estilos para el botón de reservas
+ * - Links rápidos
+ * - Redes sociales
+ * - Copyright
+ */
+
+/* ==================== */
+/* ESTRUCTURA BASE */
+/* ==================== */
+
+.footer-90s {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #333333;
+}
+
+/* ==================== */
+/* BOTÓN DE RESERVAS */
+/* ==================== */
+
+.reserva-btn-container {
+  margin-bottom: 1.5rem;
+}
+
+.reserva-btn {
+  display: inline-block;
+  background-color: #5e35b1;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: #7c4dff;
+    transform: translateY(-2px);
+  }
+}
+
+/* ==================== */
+/* LINKS RÁPIDOS */
+/* ==================== */
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quick-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  
+  .link-icon {
+    color: #00acc1;
+    font-size: 1.2rem;
+  }
+  
+  &:hover {
+    color: #ff7043;
+    
+    .link-icon {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/* ==================== */
+/* REDES SOCIALES */
+/* ==================== */
+
+.social-container {
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  
+  .social-icon {
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  &:hover {
+    color: #ff7043;
+    
+    .social-icon {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+/* ==================== */
+/* SEPARADOR */
+/* ==================== */
+
+.divider-line {
+  height: 1px;
+  background: linear-gradient(
+    to right, 
+    transparent, 
+    rgba(255, 255, 255, 0.1), 
+    transparent
+  );
+  margin: 1rem auto;
+  max-width: 300px;
+}
+
+/* ==================== */
+/* COPYRIGHT */
+/* ==================== */
+
+.copyright {
+  p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+/* ==================== */
+/* MEDIA QUERIES */
+/* ==================== */
+
+@media (min-width: 768px) {
+  .footer-90s {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .reserva-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .quick-links {
+    gap: 2rem;
+  }
+  
+  .quick-link {
+    font-size: 1rem;
+    
+    .link-icon {
+      font-size: 1.4rem;
+    }
+  }
+  
+  .social-links {
+    gap: 1.5rem;
+  }
+  
+  .social-link {
+    font-size: 1rem;
+    
+    .social-icon {
+      font-size: 1.4rem;
+    }
+  }
+  
+  .copyright p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-90s {
+    padding: 3rem 2rem;
+  }
+}
