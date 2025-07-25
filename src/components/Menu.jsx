@@ -31,7 +31,7 @@ function Menu() {
           { nombre: "Kurt Cobain", descripcion: "Vodka, jugo de arándano, granadina", precio: "$10" },
           { nombre: "Nevermind", descripcion: "Ron, jugo de piña, coco, crema", precio: "$13" },
           { nombre: "Bleach", descripcion: "Ginebra, lima, menta, soda", precio: "$11" },
-          { nombre: "In Bloom", descripcion: "Tequila, jugo de toronja, jarabe de agave", precio: "$12" }
+          { nombre: "In Bloom", descripcion: "Tequila, jugo de toronja, jarabe de agave", precio: "$123" }
         ]
       },
       {
